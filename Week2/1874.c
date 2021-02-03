@@ -47,6 +47,7 @@ int main() {
 		for (int i = 0; i < n; i++) {
 			push(i + 1);
 			if (level != -1) {
+                //*empty stack에 접근하지 않도록 주의!
 				while (level != -1 && stack[level] == lst[k]) {
 					temp[t++] = pop();
 					k++;
